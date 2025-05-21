@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .section-title {
+        border-bottom-width: 2px;
+        border-bottom-color: #ef4444;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
+    </style>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="flex justify-between items-center px-8 py-6">
+    <div class="text-xl font-bold">Web Developer
+    </div>
+
+    <nav class="space-x-6 text-sm ml-auto">
+      <a href="resume.html" class="hover:underline">Resume</a>
+      <span>|</span>
+      <a href="project.html" class="hover:underline">Projects</a>
+      <span>|</span>
+      <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <main class="flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 py-12 gap-10">
+    <div class="w-72 h-72 rounded-full overflow-hidden">
+      <img src="./pic/atharv.jpg" alt="Profile" class="w-full h-full object-cover grayscale" />
+    </div>
+
+    <div class="text-center lg:text-left max-w-xl">
+      <h2 class="text-6xl font-bold mb-4">Hello</h2>
+      <h3 class="text-xl font-semibold mb-2">A Bit About Me</h3>
+      <p class="text-gray-700 mb-8">
+       I’m a passionate developer based in India, currently pursuing a Computer Engineering degree. I love working on modern web technologies and solving real-world problems through code.
+      </p>
+
+      <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+        <a href="resume.html" class="w-24 h-24 rounded-full bg-amber-500 text-black font-bold flex items-center justify-center shadow-lg hover:scale-105 transition">Resume</a>
+        <a href="project.html" class="w-24 h-24 rounded-full bg-red-500 text-black font-bold flex items-center justify-center shadow-lg hover:scale-105 transition">Projects</a>
+        <a href="contact.html" class="w-24 h-24 rounded-full bg-cyan-300 text-black font-bold flex items-center justify-center shadow-lg hover:scale-105 transition">Contact</a>
+      </div>
+    </div>
+  </main>
+
+  <div id="dynamic-content" class="container mx-auto py-12 px-4">
+    </div>
+
+  
+
+</body>
+</html>

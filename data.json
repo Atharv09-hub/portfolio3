@@ -1,0 +1,24 @@
+{
+  "achievements": [
+    {
+      "title": "MegaHack Hackathon",
+      "organizer": "St. John College of Engineering and Management"
+    },
+    {
+      "title": "Coherence Hackathon",
+      "organizer": "Vidyavardhini's College of Engineering"
+    },
+    {
+      "title": "SQL and .NET Course",
+      "organizer": "KantaScript Company"
+    }
+  ],
+  "favorites": {
+    "books": [
+      "Atomic Habits by James Clear",
+      "The Psychology of Money by Morgan Housel"
+    ],
+    "websites": ["dev.to", "Medium"],
+    "startups": ["Notion"]
+  }
+}

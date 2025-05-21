@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class' 
+    }
+  </script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .section-title {
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white p-8">
+  <header class="p-6 bg-white dark:bg-gray-800 shadow-md">
+    <div class="flex justify-between items-center">
+      <div class="text-3xl font-bold text-blue-700 dark:text-blue-400">Web Developer</div>
+      <div class="flex items-center gap-4">
+        <button id="menu-btn" class="md:hidden text-gray-700 dark:text-gray-300 text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="theme-toggle" class="text-sm bg-gray-200 px-3 py-1 rounded-md hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition duration-300">
+          Toggle Theme
+        </button>
+      </div>
+    </div>
+    <nav id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-lg">
+      <a href="resume.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Resume</a>
+      <a href="project.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Projects</a>
+      <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Contact</a>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto space-y-12 py-8">
+    <h1 class="text-4xl font-bold text-blue-800 dark:text-blue-300">Resume</h1>
+
+    <section id="achievements-section" class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 class="section-title text-2xl font-semibold text-red-600 dark:text-red-400 border-b-2 border-red-600 dark:border-red-400">Achievements</h2>
+      <ul id="achievements-list" class="list-disc ml-6 mt-4 space-y-2 text-gray-700 dark:text-gray-300"></ul>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 class="section-title text-2xl font-semibold text-red-600 dark:text-red-400 border-b-2 border-red-600 dark:border-red-400">Education</h2>
+      <ul class="list-disc ml-6 mt-4 space-y-2 text-gray-700 dark:text-gray-300">
+        <li>Completed SSC (2021) and HSC (2023) from Lokmanya High School and Jr. College</li>
+        <li>Pursuing Computer Engineering Degree</li>
+      </ul>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 class="section-title text-2xl font-semibold text-red-600 dark:text-red-400 border-b-2 border-red-600 dark:border-red-400">Skills & Expertise</h2>
+      <ul class="list-disc ml-6 mt-4 space-y-2 text-gray-700 dark:text-gray-300">
+        <li><span class="font-semibold text-gray-800 dark:text-gray-200">Frontend:</span> HTML, CSS, JavaScript</li>
+        <li><span class="font-semibold text-gray-800 dark:text-gray-200">Backend:</span> Python, C Programming</li>
+        <li><span class="font-semibold text-gray-800 dark:text-gray-200">Database:</span> SQL, PostgreSQL</li>
+        <li><span class="font-semibold text-gray-800 dark:text-gray-200">Currently Learning:</span> Node.js</li>
+      </ul>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 class="section-title text-2xl font-semibold text-red-600 dark:text-red-400 border-b-2 border-red-600 dark:border-red-400">Future Goals</h2>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">I aim to become a tech innovator who builds scalable, human-centric solutions. I wish to contribute to open source, promote digital education, and mentor aspiring developers globally.</p>
+    </section>
+
+    <section id="personal-section" class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 class="section-title text-2xl font-semibold text-red-600 dark:text-red-400 border-b-2 border-red-600 dark:border-red-400">Personal Side</h2>
+      <p class="text-gray-700 dark:text-gray-300"><strong class="font-semibold text-gray-800 dark:text-gray-200">Hobbies:</strong> I love reading motivational books, going to the gym, and exploring emerging technologies.</p>
+      <p class="text-gray-700 dark:text-gray-300 mt-4"><strong class="font-semibold text-gray-800 dark:text-gray-200">Role Models:</strong> Elon Musk and Dr. APJ Abdul Kalam.</p>
+
+      <div class="mt-6">
+        <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200 mb-2">Favorites:</h3>
+        <ul id="favorites-list" class="list-disc ml-6 space-y-2 text-gray-700 dark:text-gray-300"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript to toggle mobile navigation menu
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+
+    // JavaScript to toggle dark mode theme
+    // This is the core logic for switching between dark and light themes
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark'); // Toggles the 'dark' class on the <html> element
+    });
+
+    // JavaScript to fetch and display dynamic data from data.json
+    fetch('data.json')
+      .then(response => {
+        // Check if the network request was successful
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); // Parse the JSON response
+      })
+      .then(data => {
+        const achievementsList = document.getElementById('achievements-list');
+        const favoritesList = document.getElementById('favorites-list');
+
+        // Populate Achievements if data exists and is an array
+        if (data.achievements && Array.isArray(data.achievements)) {
+          data.achievements.forEach(achievement => {
+            const li = document.createElement('li');
+            // Apply dark mode text color to strong tags within fetched data
+            li.innerHTML = `Participated in <strong class="font-semibold text-gray-800 dark:text-gray-200">${achievement.title}</strong> organized by ${achievement.organizer}`;
+            achievementsList.appendChild(li);
+          });
+        }
+
+        // Populate Favorites if data exists
+        if (data.favorites) {
+          if (data.favorites.books && Array.isArray(data.favorites.books)) {
+            data.favorites.books.forEach(book => {
+              const li = document.createElement('li');
+              li.innerHTML = `<span class="font-semibold text-gray-800 dark:text-gray-200">Books:</span> ${book}`;
+              favoritesList.appendChild(li);
+            });
+          }
+          if (data.favorites.websites && Array.isArray(data.favorites.websites)) {
+            data.favorites.websites.forEach(website => {
+              const li = document.createElement('li');
+              li.innerHTML = `<span class="font-semibold text-gray-800 dark:text-gray-200">Websites:</span> ${website}`;
+              favoritesList.appendChild(li);
+            });
+          }
+          if (data.favorites.startups && Array.isArray(data.favorites.startups)) {
+            data.favorites.startups.forEach(startup => {
+              const li = document.createElement('li');
+              li.innerHTML = `<span class="font-semibold text-gray-800 dark:text-gray-200">Startups:</span> ${startup}`;
+              favoritesList.appendChild(li);
+            });
+          }
+        }
+      })
+      .catch(error => console.error('Error fetching data:', error)); // Log any errors during fetch
+  </script>
+</body>
+</html>
